@@ -16,6 +16,7 @@ interface Project {
   technologies: string[];
   role: string;
   summary: string;
+  github?: string;
 }
 
 const projects: Project[] = [
@@ -73,6 +74,7 @@ const projects: Project[] = [
     role: "Data Analyst & ML Developer",
     summary:
       "Built a traffic prediction model using gradient boosting algorithms, integrated with geospatial visualization to display traffic hotspots and predicted congestion zones.",
+    github: "https://github.com/JaswanthhKumar22/BANGLORE-TRAFFIC-.git",
   },
   {
     id: 6,
@@ -217,14 +219,19 @@ const Projects = () => {
                     <ExternalLink className="w-4 h-4" />
                     View Live
                   </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="flex items-center gap-2 px-6 py-3 rounded-lg bg-card border border-border font-semibold hover:bg-muted transition-all"
-                  >
-                    <Github className="w-4 h-4" />
-                    Source Code
-                  </motion.button>
+                  {selectedProject.github && (
+                    <motion.a
+                      href={selectedProject.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex items-center gap-2 px-6 py-3 rounded-lg bg-card border border-border font-semibold hover:bg-muted transition-all"
+                    >
+                      <Github className="w-4 h-4" />
+                      Source Code
+                    </motion.a>
+                  )}
                 </div>
               </div>
             </motion.div>
