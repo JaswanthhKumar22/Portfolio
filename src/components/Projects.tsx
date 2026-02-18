@@ -42,7 +42,7 @@ const projects: Project[] = [
     summary:
       "Built an end-to-end loan default prediction system with data preprocessing, feature engineering, model training (Random Forest, XGBoost), and a web interface for real-time predictions.",
     github: "https://github.com/JaswanthhKumar22/Loan-Default-App.git",
-    },
+  },
   {
     id: 3,
     title: "Stock Market Price Prediction",
@@ -87,6 +87,7 @@ const projects: Project[] = [
     role: "ML Engineer & Full-Stack Developer",
     summary:
       "Built an end-to-end farming decision support system featuring a Random Forest-based crop recommender using soil & weather parameters, regression models (XGBoost, Random Forest) for yield prediction, and a CNN-based plant disease classifier for leaf image analysis. Integrated a rule-based advisory engine for pesticide, fertilizer, and irrigation recommendations, with multilingual support for regional farmers.",
+    github: "https://github.com/JaswanthhKumar22/AgroAI-Smart-Farming-Advisory-Platform.git",
   },
 ];
 
