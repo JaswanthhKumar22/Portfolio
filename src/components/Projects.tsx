@@ -41,7 +41,8 @@ const projects: Project[] = [
     role: "Full-Stack Developer & ML Engineer",
     summary:
       "Built an end-to-end loan default prediction system with data preprocessing, feature engineering, model training (Random Forest, XGBoost), and a web interface for real-time predictions.",
-  },
+    github: "https://github.com/JaswanthhKumar22/Loan-Default-App.git",
+    },
   {
     id: 3,
     title: "Stock Market Price Prediction",
