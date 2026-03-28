@@ -7,6 +7,7 @@ import projectSpeech from "@/assets/project-speech.jpg";
 import projectTraffic from "@/assets/project-traffic.jpg";
 import projectReID from "@/assets/project-reid.jpg";
 import projectAgroAI from "@/assets/project-agroai.jpg";
+import projectMedibot from "@/assets/project-medibot.jpg";
 
 interface Project {
   id: number;
@@ -84,6 +85,17 @@ const projects: Project[] = [
     role: "ML Engineer & Full-Stack Developer",
     summary:
       "Built an end-to-end farming decision support system featuring a Random Forest-based crop recommender using soil & weather parameters, regression models (XGBoost, Random Forest) for yield prediction, and a CNN-based plant disease classifier for leaf image analysis. Integrated a rule-based advisory engine for pesticide, fertilizer, and irrigation recommendations, with multilingual support for regional farmers.",
+  },
+  {
+    id: 7,
+    title: "Medical Chatbot — AI-Powered Medical Q&A Assistant",
+    image: projectMedibot,
+    description:
+      "A Retrieval-Augmented Generation (RAG) based web application that answers medical questions by extracting context from a medical reference book (PDF) and generating accurate, concise responses using a Large Language Model.",
+    technologies: ["LangChain", "Pinecone", "Groq", "Flask", "HuggingFace", "RAG", "Python"],
+    role: "AI/ML Engineer & Full-Stack Developer",
+    summary:
+      "Built an end-to-end RAG pipeline that extracts data from a medical PDF, splits text into chunks, generates embeddings using HuggingFace's all-MiniLM-L6-v2 model, and stores them in Pinecone (serverless, cosine similarity). User queries trigger a similarity search (top 3), and Groq's LLaMA 3.1-8B-Instant generates grounded, context-aware answers via LangChain's retrieval chain. Served through a Flask backend with a dark-themed, real-time chat UI.",
   },
 ];
 
